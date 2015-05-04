@@ -1,0 +1,24 @@
+<Alloy>
+	<Window class="container">
+		<View id="botonesPrincipal">
+				<Button id="opP1" color="white">filtros</Button>
+				<Button id="opP2" color="white">tipo de vista</Button>
+				<Button id="opP3" color="white">busqueda</Button>
+			</View>
+			
+			<View id="vistas">
+				<View layout="vertical">
+					<View backgroundColor="#34b923" height="10%"></View>
+					<ScrollableView id="vista2" backgroundColor="#882222" currentPage="1">
+						 <View id="v1" backgroundColor="blue"></View>
+						 <View id="v2" backgroundColor="white">
+						 	<ListView><SearchBar></SearchBar></ListView>
+						 </View>
+					</ScrollableView>
+				</View>
+				<Label id="cambioEti" text="reemplazar busqueda" color="white"></Label>
+				<Label bottom="150" id="cambioEti2" text="reemplazar busqueda" color="white"></Label>
+			</View>
+			
+	</Window>
+</Alloy>

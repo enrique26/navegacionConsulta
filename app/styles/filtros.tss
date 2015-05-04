@@ -1,0 +1,22 @@
+
+".container" : {
+ 	layout:'vertical'
+}
+
+"#barraFiltros":{
+	backgroundColor:'#23a934',
+	height:'10%'
+}
+
+"#opcionesFiltros":{
+	top:0,
+	height:Titanium.UI.SIZE
+	
+}
+
+"#filtrosTipo":{
+	top:0,
+	height:'80%',
+	scrollable:false,
+	allowsSelection:true
+}

@@ -1,0 +1,38 @@
+".container": {
+	backgroundColor:"white",
+	layout:'vertical'
+}
+
+"#botonesPrincipal":{
+	layout:'horizontal',
+	backgroundColor:'black',
+	color:'white',
+	height:'13%'
+}
+
+"#opP1":{
+	bottom:0,
+	top:0,
+	width:'33%',
+	borderColor:'white',
+	borderWidth:1
+}
+"#opP2":{
+	bottom:0,
+	top:0,
+	width:'33%',
+	borderColor:'white',
+	borderWidth:1
+}
+"#opP3":{
+	bottom:0,
+	top:0,
+	width:'33%',
+	borderColor:'white',
+	borderWidth:1
+}
+
+"#vistas":{
+	top:0,
+	backgroundColor:'gray'
+}

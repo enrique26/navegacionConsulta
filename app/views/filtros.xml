@@ -1,0 +1,21 @@
+<Alloy>
+	<View class="container">
+		<ScrollView>
+		<View width="80%" layout="vertical">
+			<View id="barraFiltros">
+				<Button id="aceptaFiltro" title="Aceptar" right="20" color="white"></Button>
+			</View>
+			<View id="opcionesFiltros">
+				<Picker id="estadosPick" backgroundSelectedColor="blue">
+						<PickerRow title="estados"></PickerRow>
+						<PickerRow title="estado1"></PickerRow>
+						<PickerRow title="estado2"></PickerRow>
+						<PickerRow title="estado3"></PickerRow>
+						<PickerRow title="estado4"></PickerRow>
+				</Picker>
+			</View>
+			<TableView id="filtrosTipo"></TableView>
+		</View>
+		</ScrollView>
+	</View>
+</Alloy>
