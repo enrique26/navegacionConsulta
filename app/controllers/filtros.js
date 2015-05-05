@@ -22,8 +22,8 @@ $.filtrosTipo.addEventListener('click',function(e){
 
 
 $.estadosPick.addEventListener('change',function(e){
-	Ti.API.info(''+JSON.stringify(e)+e.selectedValue);
-	if(e.selectedValue=!'estados'){
+	Ti.API.info(''+JSON.stringify(e));
+	if(e.selectedValue!='estados'){
 	Alloy.Globals.datosPicker=(e.selectedValue).toString();
 	}
 });

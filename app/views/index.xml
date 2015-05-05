@@ -12,7 +12,7 @@
 					<ScrollableView id="vista2" backgroundColor="#882222" currentPage="1">
 						 <View id="v1" backgroundColor="blue"></View>
 						 <View id="v2" backgroundColor="white">
-						 	<ListView><SearchBar></SearchBar></ListView>
+						 	<ListView><SearchBar visible="false" id="buscarS"></SearchBar></ListView>
 						 </View>
 					</ScrollableView>
 				</View>

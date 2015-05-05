@@ -11,10 +11,12 @@ $.opP2.addEventListener('click',function(){
 	// $.vistas.currentPage=1;
 	$.vistas.remove(vistaFiltros);
 });
-// 
-// $.opP3.addEventListener('click',function(){
+
+$.opP3.addEventListener('click',function(){
 	// $.vistas.currentPage=2;
-// });
+	$.buscarS.visible=true;
+	$.buscarS.focus();
+});
 
 $.index.open();
 
@@ -23,6 +25,7 @@ $.index.addEventListener('click',function(e){
 		// $.cambioEti.text=Alloy.Globals.datosTabla;
 		// $.cambioEti2.text=Alloy.Globals.datosPicker;
 	}else if(e.source.id=='aceptaFiltro'){
+		
 		$.cambioEti.text=Alloy.Globals.datosTabla;
 		$.cambioEti2.text=Alloy.Globals.datosPicker;
 		$.vistas.remove(vistaFiltros);
