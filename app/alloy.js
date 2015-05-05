@@ -12,6 +12,18 @@
 
 
 
-Alloy.Globals.datosPicker='estado1';
+Alloy.Globals.datosPicker='morelos';
 
-Alloy.Globals.datosTabla='nueva busqueda0';
+Alloy.Globals.datosTabla='hospitales';
+
+var db=require('lib/db');
+
+Alloy.Globals.leerLugares=function(categoria,estado){
+	var resultados=db.filtrarLugares(categoria,estado);
+	return  resultados;
+};
+
+Alloy.Globals.leerTodos=function(){
+	var resultados=db.countCategoria2();
+	return  resultados;
+};

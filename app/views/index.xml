@@ -1,5 +1,6 @@
 <Alloy>
 	<Window class="container">
+		
 		<View id="botonesPrincipal">
 				<Button id="opP1" color="white">filtros</Button>
 				<Button id="opP2" color="white">tipo de vista</Button>
@@ -8,11 +9,17 @@
 			
 			<View id="vistas">
 				<View layout="vertical">
-					<View backgroundColor="#34b923" height="10%"></View>
-					<ScrollableView id="vista2" backgroundColor="#882222" currentPage="1">
-						 <View id="v1" backgroundColor="blue"></View>
+					<View backgroundColor="#34b923" height="10%">
+						<Button id="verMapa" left="30%" title="ver mapa" color="white" backgroundColor="#328a23"></Button>
+						<Button id="verDirectorio" left="55%" title="ver directorio" color="white" backgroundColor="#328a23"></Button>
+					</View>
+					
+					<ScrollableView id="vista2" backgroundColor="#882222" currentPage="1" scrollingEnabled="false">
+						 <View id="v1" backgroundColor="blue">
+						 	<Module id="mapView" module="ti.map" method="createView" visible='true' top="15"></Module>
+						 </View>
 						 <View id="v2" backgroundColor="white">
-						 	<ListView><SearchBar visible="false" id="buscarS"></SearchBar></ListView>
+						 	<ListView id="listaGeneral"><SearchBar visible="false" id="buscarS"></SearchBar></ListView>
 						 </View>
 					</ScrollableView>
 				</View>

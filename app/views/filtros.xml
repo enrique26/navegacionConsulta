@@ -1,20 +1,23 @@
 <Alloy>
 	<View class="container">
 		<ScrollView>
-		<View width="80%" layout="vertical">
+		<View id="contenedorFiltros" width="80%" layout="vertical">
 			<View id="barraFiltros">
 				<Button id="aceptaFiltro" title="Aceptar" right="20" color="white"></Button>
+				<Button id="cancelaFiltro" title="cancelar" left="20" color="white"></Button>
+			</View>
+			<View height="Titanium.UI.SIZE" layout="vertical">
+				<View height="40" backgroundColor="blue">
+					<Label left="5" color="white">Categorias</Label>
+				</View>
+				<TableView id="filtrosTipo"></TableView>
 			</View>
 			<View id="opcionesFiltros">
-				<Picker id="estadosPick" backgroundSelectedColor="blue">
-						<PickerRow title="estados"></PickerRow>
-						<PickerRow title="estado1"></PickerRow>
-						<PickerRow title="estado2"></PickerRow>
-						<PickerRow title="estado3"></PickerRow>
-						<PickerRow title="estado4"></PickerRow>
-				</Picker>
+				<View height="40" backgroundColor="blue">
+					<Label left="5" color="white">Ubicacion</Label>
+				</View>
 			</View>
-			<TableView id="filtrosTipo"></TableView>
+			
 		</View>
 		</ScrollView>
 	</View>
